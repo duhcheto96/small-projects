@@ -17,14 +17,20 @@ function resetGrid() {
 		div[i].style.backgroundColor = 'white';
 	}
 }
-
+const input = document.querySelector('#input');
 // color divs in black
 let blackColorButton = document.querySelector('#blackColor');
-blackColorButton.addEventListener('click',  () => q = 1 );
+blackColorButton.addEventListener('click',  () => {
+	q = 1 
+	input.setAttribute("value", "black");
+});
 
 // add randomColorButton to change the color of the grid elements
 let randomColorButton = document.querySelector('#randomColor');
-randomColorButton.addEventListener('click', () => q = 2);
+randomColorButton.addEventListener('click', () => {
+	q = 2
+	input.setAttribute("value", "random");
+});
 
 // function for changing the color of the divs in the grid
 function toggleColor() {

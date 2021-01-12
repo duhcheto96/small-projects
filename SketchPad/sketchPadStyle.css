@@ -1,0 +1,17 @@
+body {
+	background: lightblue;
+}
+
+#container {
+	display: block;
+	width: 500px;
+}
+button {
+	margin: auto;
+	display: block;
+}
+
+.gridElement {
+	float: left;
+	background-color: white;
+}
